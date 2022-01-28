@@ -19,7 +19,19 @@
           "odataVersion": "4.0"
         }
       }
-    }
+    },
+    "crossNavigation": {
+           "inbounds": {
+               "Risk-display": {
+                   "signature": {
+                       "parameters":{},
+                       "additionalParameters":"allowed"
+                   },
+                   "sematicObject":"Mitigations",
+                   "action":"display"
+               }
+           }
+        }
   },
   "sap.ui": {
     "technology": "UI5",
@@ -132,5 +144,9 @@
       "async": true,
       "id": "app"
     }
+  },
+  "sap.cloud": {
+    "public": true,
+    "service": "cpapp.service"
   }
 }
